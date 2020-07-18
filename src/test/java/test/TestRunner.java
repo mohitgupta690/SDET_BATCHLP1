@@ -5,7 +5,11 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
  @RunWith(Cucumber.class)
-@CucumberOptions(features="feature_files", glue= "stepdefination",  
+/* for normal data from feature file
+ @CucumberOptions(features="feature_files", glue= "stepdefination",  
+ */
+ /* for excel */
+@CucumberOptions(features="feature_files", glue= "stepdefination",tags= "@CourseRegistrationusingexcel",
 format=
 {"pretty",
 "html:target/cucumber-reports/cucumber-pretty",

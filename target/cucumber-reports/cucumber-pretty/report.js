@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("project.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("excel.feature");
 formatter.feature({
   "line": 2,
   "name": "This feature is to register the Application",
@@ -8,7 +8,7 @@ formatter.feature({
   "tags": [
     {
       "line": 1,
-      "name": "@CourseRegistration"
+      "name": "@CourseRegistrationusingexcel"
     }
   ]
 });
@@ -38,37 +38,37 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "I provide first name \"mohit\"",
+  "name": "I provide first name",
   "keyword": "And "
 });
 formatter.step({
   "line": 12,
-  "name": "I provide last name \"gupta\"",
+  "name": "I provide last name",
   "keyword": "And "
 });
 formatter.step({
   "line": 13,
-  "name": "I provide email \"abc_11@gmail.com\"",
+  "name": "I provide email",
   "keyword": "And "
 });
 formatter.step({
   "line": 14,
-  "name": "I provide username \"mohit123\"",
+  "name": "I provide username",
   "keyword": "And "
 });
 formatter.step({
   "line": 15,
-  "name": "I provide password \"Password@123\"",
+  "name": "I provide password",
   "keyword": "And "
 });
 formatter.step({
   "line": 16,
-  "name": "I provide confirm password \"Password@123\"",
+  "name": "I provide confirm password",
   "keyword": "And "
 });
 formatter.step({
   "line": 17,
-  "name": "I provide phone \"1234567890\"",
+  "name": "I provide phone",
   "keyword": "And "
 });
 formatter.step({
@@ -90,126 +90,84 @@ formatter.match({
   "location": "Login_Stepdefinitions.i_launch_the_application()"
 });
 formatter.result({
-  "duration": 12750734800,
+  "duration": 10603295900,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Stepdefinitions.i_clicked_signup()"
 });
 formatter.result({
-  "duration": 4447070900,
+  "duration": 2611982900,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "mohit",
-      "offset": 22
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_first_name(String)"
+  "location": "Login_Stepdefinitions.i_provide_first_name()"
 });
 formatter.result({
-  "duration": 173298500,
+  "duration": 1269718500,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "gupta",
-      "offset": 21
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_last_name(String)"
+  "location": "Login_Stepdefinitions.i_provide_last_name()"
 });
 formatter.result({
-  "duration": 145518600,
+  "duration": 189396600,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "abc_11@gmail.com",
-      "offset": 17
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_email(String)"
+  "location": "Login_Stepdefinitions.i_provide_email()"
 });
 formatter.result({
-  "duration": 213291600,
+  "duration": 284370800,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "mohit123",
-      "offset": 20
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_username(String)"
+  "location": "Login_Stepdefinitions.i_provide_username()"
 });
 formatter.result({
-  "duration": 114052800,
+  "duration": 223152200,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Password@123",
-      "offset": 20
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_password(String)"
+  "location": "Login_Stepdefinitions.i_provide_password()"
 });
 formatter.result({
-  "duration": 220334300,
+  "duration": 297390700,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Password@123",
-      "offset": 28
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_confirm_password(String)"
+  "location": "Login_Stepdefinitions.i_provide_confirm_password()"
 });
 formatter.result({
-  "duration": 143394300,
+  "duration": 280820200,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "1234567890",
-      "offset": 17
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_phone(String)"
+  "location": "Login_Stepdefinitions.i_provide_phone()"
 });
 formatter.result({
-  "duration": 170197900,
+  "duration": 260783300,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Stepdefinitions.i_clicked_profile()"
 });
 formatter.result({
-  "duration": 81081600,
+  "duration": 104561300,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Stepdefinitions.i_provide_language()"
 });
 formatter.result({
-  "duration": 131921000,
+  "duration": 105987900,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Stepdefinitions.i_clicked_register()"
 });
 formatter.result({
-  "duration": 1036449200,
+  "duration": 1953052400,
   "status": "passed"
 });
 formatter.scenario({
@@ -238,37 +196,37 @@ formatter.step({
 });
 formatter.step({
   "line": 27,
-  "name": "I provide first name \"raj\"",
+  "name": "I provide first name",
   "keyword": "And "
 });
 formatter.step({
   "line": 28,
-  "name": "I provide last name \"raman\"",
+  "name": "I provide last name",
   "keyword": "And "
 });
 formatter.step({
   "line": 29,
-  "name": "I provide email \"raj_11@gmail.com\"",
+  "name": "I provide email",
   "keyword": "And "
 });
 formatter.step({
   "line": 30,
-  "name": "I provide username \"raj123\"",
+  "name": "I provide username",
   "keyword": "And "
 });
 formatter.step({
   "line": 31,
-  "name": "I provide password \"Password@123\"",
+  "name": "I provide password",
   "keyword": "And "
 });
 formatter.step({
   "line": 32,
-  "name": "I provide confirm password \"Password@123\"",
+  "name": "I provide confirm password",
   "keyword": "And "
 });
 formatter.step({
   "line": 33,
-  "name": "I provide phone \"1234567890\"",
+  "name": "I provide phone",
   "keyword": "And "
 });
 formatter.step({
@@ -290,126 +248,84 @@ formatter.match({
   "location": "Login_Stepdefinitions.i_launch_the_application()"
 });
 formatter.result({
-  "duration": 10289923700,
+  "duration": 18270111400,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Stepdefinitions.i_clicked_signup()"
 });
 formatter.result({
-  "duration": 4008865300,
+  "duration": 9609038500,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "raj",
-      "offset": 22
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_first_name(String)"
+  "location": "Login_Stepdefinitions.i_provide_first_name()"
 });
 formatter.result({
-  "duration": 151590300,
+  "duration": 283010600,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "raman",
-      "offset": 21
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_last_name(String)"
+  "location": "Login_Stepdefinitions.i_provide_last_name()"
 });
 formatter.result({
-  "duration": 141588000,
+  "duration": 234337400,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "raj_11@gmail.com",
-      "offset": 17
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_email(String)"
+  "location": "Login_Stepdefinitions.i_provide_email()"
 });
 formatter.result({
-  "duration": 208937000,
+  "duration": 268807700,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "raj123",
-      "offset": 20
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_username(String)"
+  "location": "Login_Stepdefinitions.i_provide_username()"
 });
 formatter.result({
-  "duration": 127374500,
+  "duration": 226924100,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Password@123",
-      "offset": 20
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_password(String)"
+  "location": "Login_Stepdefinitions.i_provide_password()"
 });
 formatter.result({
-  "duration": 207709100,
+  "duration": 250129200,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Password@123",
-      "offset": 28
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_confirm_password(String)"
+  "location": "Login_Stepdefinitions.i_provide_confirm_password()"
 });
 formatter.result({
-  "duration": 143861300,
+  "duration": 241281900,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "1234567890",
-      "offset": 17
-    }
-  ],
-  "location": "Login_Stepdefinitions.i_provide_phone(String)"
+  "location": "Login_Stepdefinitions.i_provide_phone()"
 });
 formatter.result({
-  "duration": 180446800,
+  "duration": 344790900,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Stepdefinitions.i_clicked_profileforteacher()"
 });
 formatter.result({
-  "duration": 5101806000,
+  "duration": 5114500800,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Stepdefinitions.i_provide_language()"
 });
 formatter.result({
-  "duration": 80405800,
+  "duration": 146422100,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Stepdefinitions.i_clicked_register()"
 });
 formatter.result({
-  "duration": 1130702800,
+  "duration": 1477224400,
   "status": "passed"
 });
 });

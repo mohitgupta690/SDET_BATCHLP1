@@ -1,17 +1,18 @@
 package stepdefination;
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import common.Wrapper;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
- public class Login_Stepdefinitions {
+/* normal feature file*/
+/*public class Login_Stepdefinitions  {*/
+
+ public class Login_Stepdefinitions extends Wrapper {
 
 static WebDriver driver;
 String url = "http://elearningm1.upskills.in/";
@@ -27,60 +28,96 @@ public void i_launch_the_application() throws Throwable {
 
 @And("^I clicked signup$")
 public void i_clicked_signup() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-
- //driver.findElement(By.cssSelector("input[placeholder=Username]")).sendKeys(username);
-  //  driver.findElement(By.cssSelector("input[placeholder=Pass]")).sendKeys(password);
-    driver.findElement(By.partialLinkText("Sign up!")).click();
+ driver.findElement(By.partialLinkText("Sign up!")).click();
 }   
-  @And("^I provide first name \"([^\"]*)\"$")
+ /* @And("^I provide first name \"([^\"]*)\"$")
  public void i_provide_first_name(String firstname) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
 
-     driver.findElement(By.name("firstname")).sendKeys(firstname);
-    
+     driver.findElement(By.name("firstname")).sendKeys(firstname);*/
+     
+     @And("^I provide first name$")
+     public void i_provide_first_name() throws Throwable {
+            // Write code here that turns the phrase above into concrete actions
+         driver.findElement(By.name("firstname")).sendKeys(Wrapper.getDataFromExcel(1,0));
+            
   }  
-  @And("^I provide last name \"([^\"]*)\"$")
+  /*@And("^I provide last name \"([^\"]*)\"$")
   public void i_provide_last_name(String lastname) throws Throwable {
          // Write code here that turns the phrase above into concrete actions
 
-      driver.findElement(By.name("lastname")).sendKeys(lastname);
+      driver.findElement(By.name("lastname")).sendKeys(lastname);*/
+     
+     @And("^I provide last name$")
+     public void i_provide_last_name() throws Throwable {
+            // Write code here that turns the phrase above into concrete actions
+
+         driver.findElement(By.name("lastname")).sendKeys(Wrapper.getDataFromExcel(1,1));
      
    }  
     
-  @And("^I provide email \"([^\"]*)\"$")
+  /*@And("^I provide email \"([^\"]*)\"$")
   public void i_provide_email(String email) throws Throwable {
          // Write code here that turns the phrase above into concrete actions
 
-      driver.findElement(By.name("email")).sendKeys(email);
+      driver.findElement(By.name("email")).sendKeys(email);*/
      
+     @And("^I provide email$")
+     public void i_provide_email() throws Throwable {
+            // Write code here that turns the phrase above into concrete actions
+
+         driver.findElement(By.name("email")).sendKeys(Wrapper.getDataFromExcel(1,2));
    } 
-  @And("^I provide username \"([^\"]*)\"$")
+  /*@And("^I provide username \"([^\"]*)\"$")
   public void i_provide_username(String username) throws Throwable {
          // Write code here that turns the phrase above into concrete actions
 
-      driver.findElement(By.name("username")).sendKeys(username);
+      driver.findElement(By.name("username")).sendKeys(username);*/
+     
+     @And("^I provide username$")
+     public void i_provide_username() throws Throwable {
+            // Write code here that turns the phrase above into concrete actions
+
+         driver.findElement(By.name("username")).sendKeys(Wrapper.getDataFromExcel(1,3));
      
    } 
-  @And("^I provide password \"([^\"]*)\"$")
+ /* @And("^I provide password \"([^\"]*)\"$")
   public void i_provide_password(String password) throws Throwable {
          // Write code here that turns the phrase above into concrete actions
 
-      driver.findElement(By.name("pass1")).sendKeys(password);
+      driver.findElement(By.name("pass1")).sendKeys(password);*/
+     
+     @And("^I provide password$")
+     public void i_provide_password() throws Throwable {
+            // Write code here that turns the phrase above into concrete actions
+
+         driver.findElement(By.name("pass1")).sendKeys(Wrapper.getDataFromExcel(1,4));
      
    } 
-  @And("^I provide confirm password \"([^\"]*)\"$")
+  /*@And("^I provide confirm password \"([^\"]*)\"$")
   public void i_provide_confirm_password(String confirmpassword) throws Throwable {
          // Write code here that turns the phrase above into concrete actions
 
-      driver.findElement(By.name("pass2")).sendKeys(confirmpassword);
+      driver.findElement(By.name("pass2")).sendKeys(confirmpassword);*/
+     
+     @And("^I provide confirm password$")
+     public void i_provide_confirm_password() throws Throwable {
+            // Write code here that turns the phrase above into concrete actions
+
+         driver.findElement(By.name("pass2")).sendKeys(Wrapper.getDataFromExcel(1,5));
      
    } 
-  @And("^I provide phone \"([^\"]*)\"$")
+ /* @And("^I provide phone \"([^\"]*)\"$")
   public void i_provide_phone(String phone) throws Throwable {
          // Write code here that turns the phrase above into concrete actions
 
-      driver.findElement(By.name("phone")).sendKeys(phone);
+      driver.findElement(By.name("phone")).sendKeys(phone);*/
+     
+     @And("^I provide phone$")
+     public void i_provide_phone() throws Throwable {
+            // Write code here that turns the phrase above into concrete actions
+
+         driver.findElement(By.name("phone")).sendKeys(Wrapper.getDataFromExcel(1,6));
   }
   @And("^I clicked profile$")
   public void i_clicked_profile() throws Throwable {
